@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/a"
+    android:weightSum="1">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.90"
+        android:weightSum="1">
+
+        <org.oscim.android.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mapview"
+            android:layout_weight="1.13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/colorBackground"
+        android:layout_weight="0.06">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="50dp"
+            android:layout_height="300dp"
+            android:text="Local" />
+
+        <Spinner
+            android:id="@+id/locale_area_spinner"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.96"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:foreground="@color/colorPrimary"
+            android:popupBackground="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/locale_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="OK" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lyt2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/colorBackground"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Remote" />
+
+        <Spinner
+            android:id="@+id/remote_area_spinner"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:popupBackground="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/remote_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download" />
+
+        <Button
+            android:id="@+id/gnn_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="Find Gnn" />
+
+    </LinearLayout>
+
+</LinearLayout>

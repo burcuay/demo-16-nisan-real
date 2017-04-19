@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_home">#009688</color>
+    <color name="color_gnn">#009688</color>
+    <color name="color_location">#009688</color>
+    <color name="color_profile">#009688</color>
+
+    <color name="colorPrimary">#51d8c7</color>
+    <color name="colorPrimaryDark">#51d8c7</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="colorBackground">#009688</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextHint">#51d8c7</color>
+
+</resources>
